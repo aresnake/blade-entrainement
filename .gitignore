@@ -1,0 +1,11 @@
+00_scenes/
+01_rendus/
+02_passes/
+03_livraison/
+_cache_osm/
+__pycache__/
+*.blend
+*.blend1
+*.png
+*.fbx
+*.glb
