@@ -9,3 +9,6 @@ __pycache__/
 *.png
 *.fbx
 *.glb
+
+# notes de travail personnelles d'Adrien, hors depot public
+projet.json

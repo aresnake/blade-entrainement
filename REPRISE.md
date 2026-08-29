@@ -1,26 +1,29 @@
 # Reprise - projet entrainement BLADE
 
-Ecrit le 29/08/2026 a 02h22.
+Ecrit le 29/08/2026 a 02h38.
 Ce fichier est la seule chose a lire pour reprendre. Il est reecrit a
 chaque atterrissage, donc il est toujours a jour ou il n'existe pas.
 
 ## Ou on en est
-- Palier : 08 franchi sur 10. Palier 9 non commence.
+- Palier : 08 sur 10 verifies en 5.2. Bascule engagee sur le projet capitales.
 - Tests au banc : 52
 
 ## Ce qui vient d'etre fait et tient debout
-- Huit paliers verifies en Blender 5.2, 52 tests au banc.
-- Scene de travail du palier 8 : projets/entrainement/00_scenes/palier8_matiere_v001.blend - c'est elle qui fait foi, rien n'a ete perdu.
-- La sauvegarde session_28_08.blend faite par Adrien contient les objets temporaires du banc (_hi, _lo), pas les boulons du palier 8.
+- Depot pousse : github.com/aresnake/blade-entrainement (prive), commit 6c1b5de.
+- geo.py branche sur capitales : quartier de l'Opera, 353 emprises reelles, livre dans capitales/00_scenes/opera_reel_osm_v001.blend.
+- Les quatre taches planifiees reecrites SANS AUCUN FAIT PERISSABLE : elles ne portent que l'identite, le terrain, la discipline, et ou lire le reste.
+- Panne silencieuse evitee : /areas/blender-entrainement.md avait atteint son plafond de 32 ko, toute consignation nocturne aurait echoue. Nouveau fichier blender-journal.md, et devoir d'entretien ajoute a chaque voie.
 
 ## PROCHAINE ACTION
 
-> AU CHOIX D'ADRIEN. (a) Palier 9 : addon_blade/ dans le projet entrainement, commencer par __init__.py plus le seul operateur visserie, de bout en bout. (b) Brancher geo.py sur le projet capitales, qui poursuit le meme but avec des donnees reelles - c'est la que l'entrainement devient livrable.
+> Etendre geo.py d'une fonction voies() qui extrait le reseau viaire OSM (highway=*) du meme secteur avec ses largeurs. Elle sert deux fois : retrancher l'espace public pour mesurer le coefficient d'emprise PAR ILOT, comparable aux 66 % de la reference d'Adrien ; et alimenter son gabarit 1902 avec les largeurs de rue REELLES, ce qui rend enfin vraie sa regle « la hauteur derive de la largeur de la rue ».
 
 ## Laisse en suspens - a ne pas croire acquis
-- Escalier sans contremarches ni limon ; roulement sans cage ; boulon sans chanfreins.
+- Depot PRIVE : les voies nocturnes ne peuvent pas le cloner. Decision d'Adrien en attente.
+- blade_quartier_v1.tar.gz : n'existe que dans la conversation.
 - Table ISO 4014 recitee, jamais confrontee a la norme.
-- Depot Git absent : les voies nocturnes repartent de zero.
+- Paliers 9 et 10 verts en 5.0.1, sans verdict duo.
+- Gabarit 1902 d'Adrien : sort ~2 m sous la mediane reelle de 18 m.
 
 ## Inventaire
 
